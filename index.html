@@ -3,11 +3,98 @@ layout: default
 title: Your New Jekyll Site
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
+<div class="profile-container">
+  <div class="img-container">
+    <a href="/">
+      <img alt="William Estoque" src="http://zanoby.com/assets/store/team/billy-84c61e2cd8755b51e816e9949ef45ef1.jpg" />
+    </a>
+  </div>
+  <div class="txt-container">
+    <h1>
+      <a href="/">William Estoque</a>
+    </h1>
+    <p>
+      I am a developer mastered in the dark arts of programming.<br />
+      I make big bad things happen at <a href="http://bigbadgoose.com/">bigbadgoose</a>.<br />
+      I also try to have a badass <a href="#blog-posts">blog</a>.<br />
+    </p>
+    <div class="socialize">
+      <a href="https://twitter.com/westoque">
+        <img src="https://cdn2.iconfinder.com/data/icons/New-Social-Media-Icon-Set-V11/128/twitter.png" />
+      </a>
+      <a href="mailto:william.estoque@gmail.com">
+        <img src="https://cdn2.iconfinder.com/data/icons/New-Social-Media-Icon-Set-V11/128/email.png" />
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="projects-container">
+  <h2>OPEN SOURCE PROJECTS</h2>
+  <div>
+    <div class="trow">
+      <div class="tcell">
+        <div class="img-container">
+          <img alt="William Estoque" src="https://lh3.googleusercontent.com/hhrUxJW5IqODek56Ibc4p52CFGzu6gWFyPd0tlEm2y3Fe2VADikF2muu7RRxlmgb3pJlDIoNXE8=s128-h128-e365" />
+        </div>
+        <div class="txt-container">
+          <h3>
+            <a href="https://chrome.google.com/webstore/detail/cookie-inspector/jgbbilmfbammlbbhmmgaagdkbkepnijn">
+              Cookie Inspector
+            </a>
+          </h3>
+          <p>Missing cookie manager for Google Chrome. Edit and create cookies right in the Developer Tools.</p>
+        </div>
+      </div>
+      <div class="tcell">
+        <div class="img-container">
+          <img alt="William Estoque" src="http://www.dsprobotics.com/images/ruby-logo.png" />
+        </div>
+        <div class="txt-container">
+          <h3>
+            <a href="https://github.com/westoque/phantomjs.rb">phantomjs.rb</a>
+          </h3>
+          <p>Ruby library wrapper for the infamous PhantomJS headless browser.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="trow">
+      <div class="tcell">
+        <div class="img-container">
+          <img alt="William Estoque" src="http://www.dsprobotics.com/images/ruby-logo.png" />
+        </div>
+        <div class="txt-container">
+          <h3>
+            <a href="https://github.com/westoque/google_terminal">
+              google_terminal
+            </a>
+          </h3>
+          <p>Google searches from the terminal</p>
+        </div>
+      </div>
+      <div class="tcell">
+        <div class="img-container">
+          <img alt="William Estoque" src="http://www.elfnet.org/wp-content/uploads/2011/10/Vim_logo.png" />
+        </div>
+        <div class="txt-container">
+          <h3>
+            <a href="https://github.com/westoque/molly.vim">
+              molly.vim
+            </a>
+          </h3>
+          <p>Lightweight textmate command-t vim implementation</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="recent-container">
+  <h2 id="blog-posts">BLOG POSTS</h2>
   <ul class="posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><span>{{ post.date | date_to_string }}</span> - <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 </div>

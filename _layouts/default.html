@@ -12,29 +12,53 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
 
+        <style type="text/css" media="all">
+          .me-container { overflow: hidden; margin-top: 10px; margin-bottom: 40px; }
+          .me-container .me-me { float: left; width: 70px; height: 70px; border-radius: 35px; }
+          .me-container .me-me img { width: 70px; height: 70px; border-radius: 35px; }
+          .me-container .bubble { float: left; width: 200px; margin-left: 20px; margin-top: 15px; }
+
+          .profile-container { overflow: hidden; margin-top: 30px; }
+          .profile-container .img-container { float: left; width: 200px; }
+          .profile-container .img-container img { width: 170px; height: 170px; border-radius: 135px; }
+          .profile-container .txt-container { float: left; width: 600px; }
+          .profile-container .txt-container h1 { font-size: 20px; }
+          .profile-container .socialize img { width: 50px; }
+
+          .projects-container { margin-top: 40px; }
+          .projects-container h2 { font-size: 18px; margin-bottom: 30px; }
+          .projects-container .trow { display: table-row; }
+          .projects-container .trow .tcell { overflow: hidden; display: table-cell; width: 400px; height: 120px; vertical-align: top; }
+          .projects-container .img-container { float: left; width: 100px; }
+          .projects-container .img-container img { width: 80px; height: 80px; border-radius: 48px; }
+          .projects-container .txt-container { float: left; width: 270px; }
+
+          .recent-container h2 { font-size: 18px; margin-bottom: 30px; }
+
+          .banner { text-align: center; }
+          .post-header { text-align: center; font-size: 35px; margin: 20px 0 0 0; font-weight: bold; }
+          .post-date { text-align: center; }
+        </style>
+
     </head>
     <body>
 
         <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
 
           {{ content }}
 
           <div class="footer">
             <div class="contact">
               <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
+                William Estoque<br />
+                Intense Developer<br />
+                william.estoque [at] gmail.com
               </p>
             </div>
             <div class="contact">
               <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
+                <a href="https://github.com/westoque">github.com/westoque</a><br />
+                <a href="https://twitter.com/westoque">twitter.com/westoque</a><br />
               </p>
             </div>
           </div>
