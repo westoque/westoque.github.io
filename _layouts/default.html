@@ -16,7 +16,7 @@
           .me-container { overflow: hidden; margin-top: 10px; margin-bottom: 40px; }
           .me-container .me-me { float: left; width: 70px; height: 70px; border-radius: 35px; }
           .me-container .me-me img { width: 70px; height: 70px; border-radius: 35px; }
-          .me-container .bubble { float: left; width: 200px; margin-left: 20px; margin-top: 15px; }
+          .me-container .bubble { float: left; width: 200px; margin-left: 20px; margin-top: 18px; }
 
           .profile-container { overflow: hidden; margin-top: 30px; }
           .profile-container .img-container { float: left; width: 200px; }
@@ -63,6 +63,36 @@
             </div>
           </div>
         </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+        <script type="text/javascript" charset="utf-8">
+          var QUOTES = [
+            '',
+            'Come at me bro!',
+            'Billy\'s so hot right now! Billy!',
+            'I put the A+ in Asian.',
+            'Brogramming at its best!'
+          ];
+
+          $(document).ready(function() {
+            var noOfQuotes = QUOTES.length;
+            var index;
+            var doTheFade = function() {
+              index = Math.floor((Math.random() * noOfQuotes));
+              $bubble.html(QUOTES[index]);
+              $bubble.fadeIn(function() {
+                $bubble.fadeOut(5000, function() {
+                  doTheFade();
+                });
+              });
+            };
+
+            var $bubble = $('.bubble');
+            if ($bubble.length) {
+              doTheFade();
+            }
+          });
+        </script>
 
     </body>
 </html>
