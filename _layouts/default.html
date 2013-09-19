@@ -23,6 +23,7 @@
           .profile-container .img-container img { width: 170px; height: 170px; border-radius: 135px; }
           .profile-container .txt-container { float: left; width: 600px; }
           .profile-container .txt-container h1 { font-size: 20px; }
+          .profile-container .socialize a { display: inline-block; width: 50px; }
           .profile-container .socialize img { width: 50px; }
 
           .projects-container { margin-top: 40px; }
@@ -67,7 +68,6 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
         <script type="text/javascript" charset="utf-8">
           var QUOTES = [
-            '',
             'Come at me bro!',
             'Billy\'s so hot right now! Billy!',
             'I put the A+ in Asian.',
@@ -75,10 +75,16 @@
           ];
 
           $(document).ready(function() {
+            var isCherryPopped = false;
             var noOfQuotes = QUOTES.length;
             var index;
             var doTheFade = function() {
-              index = Math.floor((Math.random() * noOfQuotes));
+              if (isCherryPopped) {
+                index = Math.floor((Math.random() * noOfQuotes));
+              } else {
+                index = 0;
+                isCherryPopped = true;
+              }
               $bubble.html(QUOTES[index]);
               $bubble.fadeIn(function() {
                 $bubble.fadeOut(5000, function() {
