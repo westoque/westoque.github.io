@@ -3,6 +3,7 @@ layout: post
 title:  "Coding is not Computer Science"
 date:   2013-09-20 22:00:00
 banner: "/images/banner-1.jpg"
+discuss: "https://news.ycombinator.com/item?id=6422282"
 categories: jekyll update
 ---
 
