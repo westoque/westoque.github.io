@@ -2,8 +2,10 @@
 layout: post
 title:  "Coding is not Computer Science"
 date:   2013-09-20 22:00:00
+banner: "/images/banner-1.jpg"
 categories: jekyll update
 ---
+
 
 Programming in college definitely taught me a lot of things. Mostly
 about data structures and things we consider to be good and fast design.
