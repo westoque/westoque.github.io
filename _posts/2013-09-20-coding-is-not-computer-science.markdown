@@ -3,7 +3,6 @@ layout: post
 title:  "Coding is not Computer Science"
 date:   2013-09-20 22:00:00
 banner: "/images/banner-1.jpg"
-discuss: "https://news.ycombinator.com/item?id=6424228"
 ---
 
 
@@ -32,3 +31,7 @@ make things more complicated and also tends to scare people off.
 Of course, this is not the path to becoming the next amazing developer
 but through time, they will get exposed to more things that will lead
 them to learn deeper topics, slowly.
+
+[Discuss on hacker news.][1]
+
+[1]: https://news.ycombinator.com/item?id=6424228
